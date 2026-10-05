@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0;
+    color: #5a321f;
+}
+
+
+/* MENU */
+
+header {
+    background-color: #fffaf0;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+}
+
+nav a {
+    color: #5a321f;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+/* INÍCIO */
+
+.inicio {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 50px 10%;
+
+    background-color: #f8e8b0;
+}
+
+.inicio div {
+    max-width: 500px;
+}
+
+.inicio h2 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.inicio p {
+    line-height: 1.6;
+}
+
+button {
+    background-color: #5a321f;
+    color: white;
+
+    border: none;
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+    margin-top: 20px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8b5e43;
+}
+
+
+/* BROWNIE */
+
+.brownie {
+    background-color: #5a321f;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 90px;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    text-align: center;
+    padding: 70px 20%;
+
+    background-color: #e8d4b8;
+}
+
+.sobre h2,
+.produtos h2,
+.pedido h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    line-height: 1.8;
+}
+
+
+/* PRODUTOS */
+
+.produtos {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.card {
+    background-color: white;
+
+    width: 280px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px #d8c7b5;
+}
+
+.imagem {
+    background-color: #f8e8b0;
+
+    padding: 30px;
+
+    font-size: 60px;
+
+    border-radius: 15px;
+}
+
+.card h3 {
+    margin: 20px 0 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+
+/* PEDIDO */
+
+.pedido {
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background-color: #f8e8b0;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+
+    background-color: #5a321f;
+
+    color: white;
+
+    padding: 40px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .inicio h2 {
+        font-size: 35px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
